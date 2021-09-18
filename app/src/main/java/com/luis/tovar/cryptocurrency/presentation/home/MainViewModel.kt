@@ -1,4 +1,4 @@
-package com.luis.tovar.cryptocurrency.ui.main
+package com.luis.tovar.cryptocurrency.presentation.home
 
 import androidx.lifecycle.ViewModel
 

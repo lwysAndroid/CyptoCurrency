@@ -1,8 +1,9 @@
-package com.luis.tovar.cryptocurrency
+package com.luis.tovar.cryptocurrency.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.luis.tovar.cryptocurrency.ui.main.MainFragment
+import com.luis.tovar.cryptocurrency.R
+import com.luis.tovar.cryptocurrency.presentation.home.MainFragment
 
 class MainActivity : AppCompatActivity() {
 
