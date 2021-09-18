@@ -6,8 +6,9 @@ import com.luis.tovar.cryptocurrency.data.mappers.CoinInfoDomainMapper
 import com.luis.tovar.cryptocurrency.domain.models.CoinDomain
 import com.luis.tovar.cryptocurrency.domain.models.CoinInfoDomain
 import com.luis.tovar.cryptocurrency.domain.repositories.CoinsRepository
+import javax.inject.Inject
 
-class CoinsRepositoryImpl(
+class CoinsRepositoryImpl @Inject constructor(
     private val coinsRemoteDataSource: CoinsRemoteDataSource
 ) :
     CoinsRepository {

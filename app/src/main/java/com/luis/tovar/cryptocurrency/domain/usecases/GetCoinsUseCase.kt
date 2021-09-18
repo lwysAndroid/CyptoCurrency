@@ -4,8 +4,9 @@ import com.luis.tovar.cryptocurrency.domain.commons.Resource
 import com.luis.tovar.cryptocurrency.domain.failures_mappers.GetCoinsFailureMapper
 import com.luis.tovar.cryptocurrency.domain.models.CoinDomain
 import com.luis.tovar.cryptocurrency.domain.repositories.CoinsRepository
+import javax.inject.Inject
 
-class GetCoinsUseCase(
+class GetCoinsUseCase @Inject constructor(
     private val coinsRepository: CoinsRepository
 ) {
 

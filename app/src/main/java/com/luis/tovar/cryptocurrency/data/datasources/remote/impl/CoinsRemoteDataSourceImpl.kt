@@ -5,8 +5,9 @@ import com.luis.tovar.cryptocurrency.data.datasources.remote.apis.CoinsApi
 import com.luis.tovar.cryptocurrency.data.datasources.remote.dto.CoinsResponse
 import com.luis.tovar.cryptocurrency.data.datasources.remote.dto.coin_info.CoinInfoResponse
 import java.lang.Exception
+import javax.inject.Inject
 
-class CoinsRemoteDataSourceImpl(private val coinsApi: CoinsApi) : CoinsRemoteDataSource {
+class CoinsRemoteDataSourceImpl @Inject constructor(private val coinsApi: CoinsApi) : CoinsRemoteDataSource {
 
     override suspend fun getCoinsList(): List<CoinsResponse> {
         val response = coinsApi.getCoinsList()
