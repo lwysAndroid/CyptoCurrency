@@ -21,7 +21,7 @@ data class CoinInfoResponse(
     @SerializedName("tags")
     val tags: List<Tag>? = null,
     @SerializedName("team")
-    val team: List<Team>? = null,
+    val team: List<TeamMember>? = null,
     @SerializedName("description")
     val description: String? = null,
     @SerializedName("message")
